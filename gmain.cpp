@@ -3,14 +3,16 @@
 void gmain()
 {
 	window(1920, 1080);
-	
+	int title = 0, play = 1, over = 2, state = title;
 	repeat()
 	{
-		background(0, 0, 0);
-
-		//info
-		print((let)"w:" + width + " h:" + height);
-		print((let)"x:" + (int)mouseX + " y:" + (int)mouseY);
-		print((let)"delta:" + delta);
+		if (state == title)
+		{
+			//background(255, 200, 255);
+			print("Title");
+			//if (isTrgger(mouse_LBUTTON))
+			{
+				state = play;
+			}
+		}
 	}
-}
